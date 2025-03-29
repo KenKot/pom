@@ -1,6 +1,6 @@
 import { Counter } from "./Counter.js";
 
-export class counterUI {
+export class CounterUI {
   constructor() {
     this.startEl = document.querySelector(".start-button");
     this.stopEl = document.querySelector(".stop-button");
