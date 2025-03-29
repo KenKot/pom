@@ -1,0 +1,43 @@
+.container {
+  border: 2px solid red;
+}
+
+.main {
+  border: 2px solid green;
+}
+
+.header {
+  border: 2px solid puruple;
+  text-align: center;
+}
+
+.body {
+  border: 2px solid black;
+  height: 500px;
+}
+
+.counter-body {
+  border: 2px solid red;
+  /*   text-align: center; */
+  display: flex;
+  /*   align-items: center; */
+  justify-content: center;
+}
+
+.counter {
+  border: 2px solid blue;
+  font-size: 82px;
+}
+
+.controlpanel-body {
+  margin-top: 100px;
+  border: 2px solid red;
+  /*   text-align: center; */
+  display: flex;
+  /*   align-items: center; */
+  justify-content: center;
+}
+
+.control-panel {
+  border: 2px solid blue;
+}
