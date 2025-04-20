@@ -1,7 +1,8 @@
 export class Counter {
   constructor(seconds) {
     this.seconds = seconds;
-    this.interval;
+    this.interval = null;
+    this.onEnd = null;
   }
 
   get secondsLeft() {
@@ -17,12 +18,12 @@ export class Counter {
 
     this.interval = setInterval(() => {
       renderMinsAndSecsCallback(this.seconds);
-
-      if (this.seconds === 0) {
-        clearInterval(this.interval);
-      }
-
       this.seconds--;
+
+      if (this.seconds < 0) {
+        clearInterval(this.interval);
+        if (this.onEnd) this.onEnd();
+      }
     }, 1000);
   }
 
